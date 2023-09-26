@@ -1,4 +1,4 @@
-# ulaodingvcl
+# uloadingvcl
 # Delphi Runtime Form com GIF Animado e Mensagem Personalizada
 
 Este repositório contém uma unit Delphi que permite criar em tempo de execução um formulário com uma mensagem de texto e um GIF animado. A mensagem pode ser atualizada dinamicamente e o formulário pode ser fechado automaticamente após um tempo limite especificado. Além disso, é possível forçar o fechamento do formulário utilizando o atalho de teclado Shift + F9.
