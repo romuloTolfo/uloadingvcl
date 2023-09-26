@@ -34,7 +34,9 @@ begin
   end;
 end;
 
+#English
 Delphi Runtime Form with Animated GIF and Custom Message
+
 This repository contains a Delphi unit that allows you to create a form at runtime featuring a custom text message and an animated GIF. The message can be dynamically updated and the form can be automatically closed after a specified timeout. Additionally, you can force-close the form using the Shift + F9 keyboard shortcut.
 
 Features
