@@ -33,21 +33,24 @@ begin
     tloading.Hide;
   end;
 end;
+```
 
-#English
-Delphi Runtime Form with Animated GIF and Custom Message
+# English
+## Delphi Runtime Form with Animated GIF and Custom Message
 
 This repository contains a Delphi unit that allows you to create a form at runtime featuring a custom text message and an animated GIF. The message can be dynamically updated and the form can be automatically closed after a specified timeout. Additionally, you can force-close the form using the Shift + F9 keyboard shortcut.
 
-Features
-Runtime form creation
-Animated GIF display
-Customizable text message
-Auto-close with timeout
-Forced close keyboard shortcut (Shift + F9)
-How to Use
+## Features
+- Runtime form creation
+- Animated GIF display
+- Customizable text message
+- Auto-close with timeout
+- Forced close keyboard shortcut (Shift + F9)
+
+## How to Use
 Here's a simple example of how to use TLoading in a Delphi project:
 
+```delphi
 procedure TForm1.Button1Click(Sender: TObject);
 var
   i, cont: integer;
@@ -65,3 +68,4 @@ begin
     tloading.Hide;
   end;
 end;
+```
