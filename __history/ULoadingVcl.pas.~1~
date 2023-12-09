@@ -32,7 +32,7 @@ type
     class var ImageStream: TMemoryStream;
     class var DecodedBytes: TBytes;
     class function Getimage: string; static;
-	class var FCurrentID: string;
+	class var FCurrentID: string;							 
   public
 
     class procedure ShowLoad(const Frm: Tform; const msg: string; timeout: cardinal= 0);
@@ -82,11 +82,11 @@ begin
 end;
 
 class procedure TLoading.FundoDeactivate(Sender: TObject);
-begin
-  if Assigned(Layout) then
+begin						    
+  if Assigned(Layout) then						
     Layout.BringToFront;
   if Assigned(Fundo) then
-    Fundo.BringToFront;
+    Fundo.BringToFront;				
 end;
 
 class procedure TLoading.Hide;
@@ -118,7 +118,6 @@ begin
   imageload := nil;
   Layout    := nil;
   Fundo     := nil;
-
   freeandnil(InputStream);
   freeandnil(ImageStream);
   DecodedBytes := nil;
@@ -157,10 +156,9 @@ begin
   fundo.Scaled := false;
   fundo.StyleElements := [];
   fundo.Show;
-
   fundo.top := frm.top;
   fundo.Left := frm.Left;
-  fundo.StyleName := frm.StyleName;
+
   fundo.Color := clblack;
   fundo.Ctl3D := true;
   Fundo.DoubleBuffered := True;
@@ -227,7 +225,7 @@ begin
   mensagem.Visible    := true;
   mensagem.WordWrap   := true;
 
-  FCurrentID := IntToStr(Random(MaxInt)) + FormatDateTime('hhnnsszzz'+inttostr(random(999999)), Now);
+  FCurrentID := IntToStr(Random(MaxInt)) + FormatDateTime('hhnnsszzz', Now);
 
   layout.Show;
   fundo.BringToFront;
